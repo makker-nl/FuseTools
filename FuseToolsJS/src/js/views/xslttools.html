@@ -1,0 +1,25 @@
+<!--
+ Copyright (c) 2022, Martien van den Akker.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ --> 
+ <div class="oj-hybrid-padding">
+    <h1>XSLT Tools</h1>
+    <div id="xsltToolsContainer" style="" class="demo-padding demo-container">
+        <p>Copy and paste a Stylesheet tag into the top text field and click on the button. </p>
+        <div id="xsltToolsContent" style="width: 1px; min-width: 100%;">
+            <div class="demo-flex-display oj-flex-items-pad">
+                <div class="oj-flex oj-sm-flex-direction-column">
+                    <div class="oj-flex-item"> <oj-text-area id="xslNamespaces" value="{{xslNamespaces}}" raw-value={{rawXslNamespaces}} style="max-width:100%"  
+                                                             label-hint="Provide XSLT Stylesheet start tag with attributes"
+                                                             resize-behavior="both">	</oj-text-area></div>
+                    <div class="oj-flex-item">  <div id='buttons-container'>
+                            <oj-button id='btnGetNamespaceList' on-oj-action='[[buttonClick]]'>Get Namespace List</oj-button></div></div>
+
+                    <div class="oj-flex-item"> <oj-text-area id="textxslNamespaceExcludes" value="{{xslNamespaceExcludes}}" raw-value={{rawXslNamespaceExcludes}} style="max-width:100%"  
+                                                             label-hint="Resulting exclude-result-prefixes" resize-behavior="both">	</oj-text-area></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
