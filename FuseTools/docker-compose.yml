@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+
+#### Adapter
+  fusetools:
+    container_name: fusetools
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    networks:
+      - fuse-network
+    restart: always
+    # https://linuxhint.com/docker_compose_memory_limits/
+    # https://docs.docker.com/compose/compose-file/compose-file-v3/
+    deploy:
+        resources:
+            limits:
+                cpus: '1.0' 
+                memory: 512m
+    ports:
+      - "8080:8080"
+#
+networks:
+  fuse-network:
+    name: fuse-network
