@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>nl.mio.fusetools</groupId>
   <artifactId>FuseTools</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
   <name>FuseTools</name>
   <description>OracleJET and SpringBoot/Camel app to serve FuseTools app.</description>
   <properties>
