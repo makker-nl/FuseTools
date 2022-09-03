@@ -18,7 +18,7 @@ spec:
         app: fusetools
     spec:
       containers:
-      - image: makkernl/fusetools:latest
+      - image: makkernl/fusetools:1.0.1-SNAPSHOT
         name: fusetools
         resources: {}
 status: {}
